@@ -10,6 +10,9 @@ local.properties
 .loadpath
 .recommenders
 
+# Tomcat metas
+server.xml
+
 # External tool builders
 .externalToolBuilders/
 
