@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+fn1()
+/* 함수선언식 */
+function fn1() {
+	console.log('function declaration')
+}
+
+fn2()
+/* 함수표현식 - unnamed */
+var fn2 = function() {
+	console.log('function expression')
+}
+
+fn3()
+/* 함수표현식 - unnamed, not hoisting */
+fn3 = function() {
+	console.log('function expression')
+}
+
+fn4()
+/* 함수 생성자 이용 */
+var fn4 = new Function('console.log("With Constructor")');
+
+
+</script>
+
+</head>
+<body>
+</body>
+</html>
