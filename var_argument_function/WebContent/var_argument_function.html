@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<!-- code here -->
+<script type='text/javascript'>
+
+function f(a,b,c) {
+	var actual = arguments.length;
+	var expect = arguments.callee.length;
+	
+	console.log("myname: " + arguments.callee);
+	console.log("params: " + arguments);
+	console.log("param0: " + arguments[0]);
+	console.log("actual: " + actual);
+	console.log("expect: " + expect);	
+}
+
+f(1, 2)
+f(1, 2, 3)
+f(1, 2, 3, 4)
+
+</script>
+<!-- code end  -->
+
+</head>
+<body>
+</body>
+</html>
