@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<!-- code start -->
+<script type='text/javascript'>
+
+function plus(a, b) {
+	
+	if (a < 0) 
+		throw new Error("First incorrect");
+		
+	if (b < 0)
+		throw new Error("Second incorrect.");
+}
+
+
+try {
+	var r1 = plus(10, -20);
+	var r2 = r1 * 10 / 100 + 20;
+	console.log(r2);
+} catch (e) {
+	console.log(e.message, e.name);
+}
+
+
+
+</script>
+<!-- code end -->
+
+</head>
+<body>
+</body>
+</html>
