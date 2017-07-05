@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+var module = (function() {
+    var i = 0;
+ 
+    return {
+        increment: function() {
+            i = i + 1;
+            return i;  
+        },
+ 
+        decrement: function() {
+            i = i - 1;
+            return i;
+        },
+ 
+        count: i,   
+    };
+})();
+ 
+console.log(module.count);         // 0
+console.log(module.increment());   // 1
+console.log(module.decrement());   // 0
+console.log(module.count);         // 0 
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
