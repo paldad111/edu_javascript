@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type='text/javascript'>
+
+var x = "global";
+/* The activation object of closure is not terminate */
+function closure() {
+	var x = "local";
+	return function() {
+		alert(x)
+	}	
+}
+
+var call = closure();
+call();
+
+</script>
+
+</head>
+<body>
+</body>
+</html>
