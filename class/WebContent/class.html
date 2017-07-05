@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<!--  Code Here  -->
+<script type="text/javascript">
+function Person(name, age) {
+    this.name = name;
+    this.age  = age;
+ 
+    this.sayhello = function() {
+        console.log(this);
+    }
+}
+ 
+/* this - obj1 */
+var obj1 = new Person("Lee", 27);
+obj1.sayhello();
+ 
+/* this - "abc" */
+obj1.sayhello.call("abc");
+ 
+/* this - window */
+var boo = obj1.sayhello;
+boo();
+
+
+</script>
+<!--  Code End   -->
+
+</head>
+<body>
+
+</body>
+</html>
